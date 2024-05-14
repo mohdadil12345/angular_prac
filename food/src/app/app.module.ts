@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { DetailsPageComponent } from './details-page/details-page.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    CartPageComponent,
+    DetailsPageComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
