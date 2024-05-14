@@ -1,1 +1,18 @@
-<p>menu works!</p>
+
+
+
+<div class="container">
+
+<div class="menus" *ngFor="let items of menu">
+       <div class="name">
+        <h1>{{items.name}}</h1>
+       </div>
+        <img src={{items.img}} alt="">
+        <strong>{{items.difficulty}}</strong>
+        <div class="btn">
+            <button>ADD TO CART</button>
+            <button>DELETE</button>
+        </div>
+</div>
+
+</div>

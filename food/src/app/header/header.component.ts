@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
 
 
- api = 'https://ride-share-backend-pw1v.onrender.com'
+
 
 }
