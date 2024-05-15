@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodserviceService } from '../foodservice.service';
+import { OnlineStatusService } from '../onlinestatus.service';
 
 @Component({
   selector: 'app-menu',
@@ -12,7 +13,7 @@ export class MenuComponent implements OnInit {
 
    menu : any[] = []
 
-constructor(private x : FoodserviceService) {
+constructor(private x : FoodserviceService, private status : OnlineStatusService) {
      
 }
 

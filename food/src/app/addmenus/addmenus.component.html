@@ -1,12 +1,15 @@
 
 
 <div class="admin">
-    <form (ngSubmit)="handle_form()">
-        <input type="text" placeholder="name">
+    <form (ngSubmit)="handle_form(formData)" #formData="ngForm">
 
-        <input type="text" placeholder="image">
+        <input name="title" [(ngModel)]="title" type="text" placeholder="title">
 
-        <input type="text" placeholder="difficulty">
+        <input name="image" [(ngModel)]="image" type="text" placeholder="image">
+
+        <input name="category" [(ngModel)]="category" type="text" placeholder="category">
+
+        <input name="price" [(ngModel)]="price" type="text" placeholder="price">
 
         <button type="submit">ADD</button>
 

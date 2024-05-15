@@ -20,7 +20,9 @@ export class FoodserviceService {
      return  this.http.get<any>(this.api)
   }
 
-
+  addData(data: any): Observable<any> {
+    return this.http.post<any>(`${this.api}/add`, data);
+  }
 
 
 }
