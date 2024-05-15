@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class FoodserviceService {
 
  
-  api = 'https://ride-share-backend-pw1v.onrender.com/menu/food'
+  api = 'https://food-backend-2-86ck.onrender.com/products'
 
 
 

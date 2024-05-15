@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AddmenusComponent {
 
+
+  handle_form() {
+    
+console.log("adil")
+
+
+  }
+
 }
