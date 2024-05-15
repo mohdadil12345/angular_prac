@@ -19,10 +19,17 @@ constructor(private x : FoodserviceService, private status : OnlineStatusService
 
 
 getAllMenus() {
-   this.x.getData().subscribe((data) => {
-       console.log("data", data)
-       this.menu = data
-   })
+  if(this.status.isOnline){
+    this.x.getData().subscribe((data) => {
+      console.log("data", data)
+      this.menu = data
+    })
+  }else{
+    let lsdata = JSON.parse(localStorage.getItem("offline_prod") || "[]");
+    this.menu = lsdata
+    
+  }
+
 
 
 }
