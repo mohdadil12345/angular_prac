@@ -24,6 +24,10 @@ export class FoodserviceService {
     return this.http.post<any>(`${this.api}/add`, data);
   }
 
+  deleteData(data: any): Observable<any> {
+    return this.http.delete<any>(`${this.api}/delete`, data);
+  }
+
 
 }
 

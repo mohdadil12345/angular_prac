@@ -21,9 +21,6 @@ export class AddmenusComponent {
     
   }
 
-
-
-
   handle_form(ele : NgForm) {
     
   console.log(ele.value)
